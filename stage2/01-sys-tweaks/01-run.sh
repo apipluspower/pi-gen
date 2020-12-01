@@ -66,3 +66,6 @@ usermod --pass='*' root
 EOF
 
 rm -f "${ROOTFS_DIR}/etc/ssh/"ssh_host_*_key*
+
+install -m 644 files/keyboard      "${ROOTFS_DIR}/etc/default/keyboard"
+
